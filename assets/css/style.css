@@ -1,72 +1,109 @@
-body{
-    background: rgb(12, 12, 12);
-    background-size: cover;
-    background-attachment: fixed;
+/* Fuestes y tipografias de Texto */
+@font-face {
+    font-family: "Hacked";
+    src: url('font/HACKED.ttf');
+}
+@font-face {
+    font-family: "Pixel";
+    src: url('font/PixelOperatorMono.ttf'), url('font/PixelOperatorMono-Bold.ttf');
+}
+/* ------------------------------ */
+
+body {
+    background-color: rgb(255, 255, 255);
     margin: 0;
-    padding-top: 0px;
 }
 
-#particles-js {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background:rgba(0, 0, 0, 0.0);
+#encabezado {
+    background-color: rgb(245, 250, 252);
+    padding-top: 30px;
+    margin-top: 2.5%; margin-left: 2.5%; margin-right: 2.5%; margin-bottom: 0%;
+
+    .centrado{
+        position: relative;
+        width: 1000px;
+        margin: 0 auto; /* Centrar horizontalmente */
+
+        img {
+            opacity: 1; /* Valor entre 0 y 1 */
+            border-radius:0%;
+            position: relative;
+        }
+
+        h1 {
+            position: absolute; top: 300px; left: 110px;
+            font-family: "Hacked", oswald;
+            font-size: 125px;
+            font-weight:normal;
+            color: rgb(0, 0, 0);
+        }
+    }
+
 }
 
-h1 {
-    background-color: rgb(54, 220, 254);
-    color: black;
-    padding: 30px;
-    font-family: oswald, Arial, Helvetica, sans-serif;
-    margin: 10;
-    position: relative;
+#cuerpo {
+    background-color: rgb(20, 20, 20);
+
+    #fondo{
+        background-color: black;
+        padding-top: 0%;
+        margin-left: 2.5%; margin-right: 2.5%;
+        position: relative;
+
+        h1 {
+            text-align: center;
+            background-color: rgb(18, 207, 254);
+            color: black;
+            font-size: 75px;
+            font-family: "Pixel", oswald;
+            position: absolute;
+            display: inline-block;
+
+            .title {
+                background-color: white;
+                color: black;
+                font-family: "Pixel", oswald;
+                display: inline-block;
+            }
+        }
+
+        pre {
+            position: absolute; top: 50px;
+            font-family: "Pixel", oswald;
+            padding-top: 0%; padding-bottom: 0%;
+            margin-top: 0%; margin-bottom: 0%;
+            color: rgba(255, 255, 255, 0.255);
+        }
+
+        img {
+            position: relative; left: 500px; top: 0px;
+            opacity: 15%;
+        }
+
+        
+    }
+
+    #trancision-1 {
+        background-color: rgb(18, 207, 254);
+        padding-top: 0%;
+        margin-left: 2.5%; margin-right: 2.5%;
+        position: relative;
+    }
+
+    #trancision-2 {
+        height: 500px;
+        background-image: url("img/blue_pixelgradient.png");
+        background-repeat: repeat-x; /* Repetir solo en el eje horizontal */
+        padding-top: 0%;
+        margin-left: 2.5%; margin-right: 2.5%; margin-top: 0%;
+        position: relative;
+    }
+
+    p {
+        font-family: "Pixel", oswald;
+        padding-top: 0%; padding-bottom: 0%;
+        margin-top: 0%; margin-bottom: 0%;
+    }
+
 }
 
-h2 {
-    color: hsl(0, 0%, 100%);
-    font-family: oswald, Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    padding-left: 30px;
-    position: relative;
-}
-p {
-    background-color: #000;
-    margin-left: 30px;
-    display: inline-block;
-    padding-right: 30px;
-    color: rgb(54, 220, 254);
-    font-family: oswald, Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    position: relative;
-    overflow: auto;
-}
-
-.title {
-    background-color: white;
-    color: black;
-    font-family: oswald, Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    padding-left: 20px; padding-right: 20px;
-    margin-bottom: 5px;
-    position: relative;
-}
-
-iframe {
-    position: relative;
-}
-
-img {
-    border-radius: 100%;
-    position: relative;
-}
-
-.contenedor {
-    position: relative;
-    width: 500px;
-    margin: 0 auto; /* Centrar horizontalmente */
-}
-
-.usuario {
-    position: absolute; top: 377px; left: 180px;
-    font-size: 12px;
-}
