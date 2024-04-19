@@ -21,21 +21,24 @@ body {
 
     .centrado{
         position: relative;
-        width: 1000px;
+        width: 100%;
         margin: 0 auto; /* Centrar horizontalmente */
 
         img {
             opacity: 1; /* Valor entre 0 y 1 */
             border-radius:0%;
             position: relative;
+            height: ;"100%";
         }
 
         h1 {
-            position: absolute; top: 300px; left: 110px;
+            position: absolute; top: 25%; left: 18%;
             font-family: "Hacked", oswald;
-            font-size: 125px;
+            font-size: 10vw;
             font-weight:normal;
-            color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            background-color: rgb(0,0,0);
+            padding-left: 1%; padding-rigth: 1%;
         }
     }
 
@@ -54,7 +57,7 @@ body {
             text-align: center;
             background-color: rgb(18, 207, 254);
             color: black;
-            font-size: 75px;
+            font-size: 5vw;
             font-family: "Pixel", oswald;
             position: absolute;
             display: inline-block;
@@ -68,7 +71,8 @@ body {
         }
 
         pre {
-            position: absolute; top: 50px;
+            font-size: 1vw;
+            position: absolute; top: 2%;
             font-family: "Pixel", oswald;
             padding-top: 0%; padding-bottom: 0%;
             margin-top: 0%; margin-bottom: 0%;
@@ -76,7 +80,7 @@ body {
         }
 
         img {
-            position: relative; left: 500px; top: 0px;
+            position: relative; left: 50%; top: 0px;
             opacity: 15%;
         }
 
@@ -106,4 +110,3 @@ body {
     }
 
 }
-
